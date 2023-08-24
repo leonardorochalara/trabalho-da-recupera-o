@@ -1,0 +1,36 @@
+{
+  "dados": [
+    {
+      "nome": "leo",
+      "idade": 18,
+      "email": "leo@gmail.com",
+      "cpf": "123.123.123-85",
+      "senha": "123456",
+      "id": 1
+    },
+    {
+      "nome": "leo",
+      "idade": 18,
+      "email": "leo@gmail.com",
+      "cpf": "123.123.123-85",
+      "senha": "123456",
+      "id": 2
+    },
+    {
+      "nome": "thyago",
+      "idade": 25,
+      "email": "thyagoalmeida@gmail.com",
+      "cpf": "245.456.789.25",
+      "senha": "123456",
+      "id": 3
+    },
+    {
+      "nome": "Mario",
+      "idade": 23,
+      "email": "mario@gmail.com",
+      "cpf": "212121212",
+      "senha": "111111",
+      "id": 4
+    }
+  ]
+}

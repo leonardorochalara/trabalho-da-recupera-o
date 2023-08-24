@@ -1,0 +1,57 @@
+<div class="cadastro">
+<form #form="ngForm" (ngSubmit)="cadastro(form)"><app-negrito [Negrito] = texto>Cadastro</app-negrito>
+  <div *ngIf="control == false">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome" ngModel required>
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="idade">Idade</label>
+      <input type="number" class="form-control" name="idade" placeholder="Digite o sua idade" ngModel required>
+      
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="email">email</label>
+      <input type="text" class="form-control" name="email" placeholder="email@email.com" ngModel required>
+      
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-control" name="cpf" placeholder="Digite o cpf" ngModel required>
+      
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input type="password" maxLength="6" class="form-control" name="senha" placeholder="Digite a senha" ngModel required>
+      <strong>maximo de 6 caractere</strong>
+    </div>
+    
+  </div>
+<!------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------->
+  <div *ngIf="control == true">
+    <div class="form-group">
+      <label for="nome">Email:</label>
+      <input type="text" class="form-control"  placeholder="email@email.com">
+    </div>
+    <div class="form-group">
+      <label for="idade">senha</label>
+      <input type="password" maxLength="6" class="form-control" id="senha" placeholder="Digite senha">
+    </div>
+  </div>
+   
+   <!--  <button type="submit" class="btn btn-primary" style="margin-top: 20px; margin-right: 5px;" action="entrar">Cadastrar</button> -->
+   <button  type="submit" class="btn btn-primary" style="margin-top: 20px; margin-left: 5px;">{{nameButton2}}</button>
+    <button  type="button" class="btn btn-primary" style="margin-top: 20px;"  (click)="login()">{{nameButton}}</button>
+    
+    
+  </form>
+  
+</div>

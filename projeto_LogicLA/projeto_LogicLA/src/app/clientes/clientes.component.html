@@ -1,0 +1,36 @@
+<h1 class="titulo">
+    <app-negrito [Negrito]=texto></app-negrito>
+</h1>
+
+<div class="conteiner" style="height: 10%; display: inline-block; @media and (max-width: 100px) {
+width: 20%    
+}">
+   <div class="col-4" *ngFor="let dados of meusDados">
+    
+   <strong>Nome: {{dados.nome}} </strong>  |  <strong>Idade: {{dados.idade}}</strong>  |  <strong>Cpf: {{dados.cpf}}</strong>  |  <strong>E-mail: </strong>{{dados.email}} 
+   <button class="btn btn-danger" (click)="excluir(dados.id)">Excluir</button>
+   <hr>
+   </div>
+   </div>
+   
+   
+   
+   
+   
+   
+    <!-- <p><strong>Nome: </strong> {{usuario.nome}} {{usuario.idade}} </p> -->
+<!-- 
+    <div *ngFor="let i of usuarioCaixa" class="historico">
+        <hr>
+        <p><strong>Nome: </strong>{{i.nome}}</p>
+        <p><strong>Idade: </strong>{{i.idade}}</p>
+        <br>
+        <hr>
+    </div>
+</div>
+<h3>somente acima de 21: </h3>
+<div *ngFor="let i of usuarioCaixa" class="historico">    
+    
+    <div *ngIf="i.idade >=22"><app-negrito [Negrito]=texto></app-negrito>: {{i.nome}} {{i.idade}}</div> 
+    
+</div>-->
